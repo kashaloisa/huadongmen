@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黄梦玲</title>
+    <style>
+            .Box {
+            width: 100%;
+            max-width: 100px;
+            margin: 0 auto;
+            text-align: center;
+            align-items: center;
+        }
+        .Tabs {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: block;
+        }
+        .tab-item {
+            list-style: none;
+            position: relative;
+            margin: 10px 0; /* 一级标题的间隔 */
+            background-color: #ededed;
+            color: black;
+            font-size: 20px;
+            text-align: center;
+        }
+        .tab-item > a {
+            text-decoration: none;
+            color: #ffffff; /* 一级标题字体颜色 */
+            background-color: #ffd8d8; /* 一级标题背景颜色 */
+            font-style: oblique
+            padding: 5px 10px;
+            display: block;
+            font-size: 20px; /* 一级标题字体大小 */
+            font-weight: bold; /* 一级标题字体样式 */
+            border-radius: 5px;
+        }
+        .tab-item > a:hover {
+            background-color: #c2c2c2; /* 一级标题悬停背景颜色 */
+        }
+        .sub-box {
+            display: none; /* 默认隐藏二级标题 */
+            position: absolute;
+            top: 0;
+            left: 100%;
+            background-color: #eee; /* 二级标题背景颜色 */
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 1;
+        }
+        .tab-item:hover .sub-box {
+            display: block; /* 鼠标悬停时显示二级标题 */
+        }
+        .sub-tabs {
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+        }
+        .sub-tabs>li {
+            list-style: none;
+            margin: 0 10px; 
+        }
+        .sub-tabs >li >a {
+            text-decoration: none;
+            color: #000000; /* 二级标题字体颜色 */
+            padding: 5px 10px;
+            font-style: inherit;
+            font-size: 16px; /* 二级标题字体大小 */
+        }
+    </style>
+</head>
+<body>
+    <div class="Box">
+        <ul class="Tabs">
+            <li class="tab-item">
+               <a href="">书籍</a> 
+                <div class="sub-box">
+                    <ul class="sub-tabs">
+                        <li><a href="">散文诗歌类</a></li>
+                        <li><a href="">人物传记类</a></li>
+                        <li><a href="">文学小说类</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="tab-item">
+                <a href="">电影</a> 
+                <div class="sub-box">
+                    <ul class="sub-tabs">
+                        <li><a href="">商业片</a></li>
+                        <li><a href="">文艺片</a></li>
+                        <li ><a href="">探索片</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="tab-item">
+                <a  href="">音乐</a>
+                <div class="sub-box">
+                    <ul class="sub-tabs">
+                        <li><a href="">流行乐</a></li>
+                        <li><a href="">古典乐</a></li>
+                        <li><a href="">摇滚乐</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
